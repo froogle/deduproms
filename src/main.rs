@@ -36,7 +36,7 @@ fn main() {
                 .value_name("GAMELIST")
                 .help("Path to the gamelist.xml file")
                 .value_parser(clap::value_parser!(String))
-                .required(true),
+                .default_value("gamelist.xml"),
         )
         .arg(
             Arg::new("romdir")
@@ -45,7 +45,7 @@ fn main() {
                 .value_name("ROMDIR")
                 .help("Directory where the ROM files are located")
                 .value_parser(clap::value_parser!(String))
-                .required(true),
+                .default_value("."),
         )
         .arg(
             Arg::new("dupdir")
