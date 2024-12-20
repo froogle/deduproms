@@ -1,0 +1,11 @@
+[package]
+name = "deduproms"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.0"
+quick-xml = "0.23"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+serde-xml-rs = "0.5"
